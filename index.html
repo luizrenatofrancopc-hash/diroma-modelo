@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Di Roma Pizzaria | Pizza e açaí em Campo Grande - MS</title>
+<meta name="description" content="Pizzaria e açaíteria na Vila Piratininga, em Campo Grande. Massa fresca feita todo dia, molho artesanal, combos e açaí. Peça pelo WhatsApp ou online.">
+<meta property="og:title" content="Di Roma Pizzaria | Campo Grande - MS">
+<meta property="og:description" content="Massa fresca todo dia, sem pré-assamento e sem conservantes.">
+<meta property="og:image" content="https://luizrenatofrancopc-hash.github.io/diroma-modelo/img/banner.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234a0f1a'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' font-family='Georgia' font-weight='700' fill='%23e6c675'%3EDR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf6ee; --bg2:#f2e7d4; --panel:#fffdf9; --line:#e3d3b5;
+  --verde:#4a0f1a; --verde2:#6b1a28; --laranja:#c9a24b; --amarelo:#e6c675;
+  --texto:#2a1a14; --muted:#6f5d52;
+  --r:18px;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--texto);font-family:Figtree,system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.05;margin:0;color:var(--verde)}
+h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800}
+.kicker{display:inline-flex;align-items:center;gap:8px;color:var(--laranja);font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+.kicker::before{content:"";width:22px;height:2px;background:var(--laranja)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .2s ease,background .2s ease;font-size:1rem}
+.btn:active{transform:scale(.97)}
+.btn-zap{background:var(--verde);color:#fff;box-shadow:0 10px 26px -12px rgba(74,15,26,.9)}
+.btn-zap:hover{background:var(--verde2);transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid var(--verde);color:var(--verde)}
+.btn-ghost:hover{background:var(--verde);color:#fff}
+.btn svg{width:20px;height:20px;flex:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--laranja);outline-offset:3px}
+
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s ease,border-color .3s ease;border-bottom:1px solid transparent}
+header.solid{background:rgba(251,246,238,.92);backdrop-filter:blur(10px);border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{width:38px;height:38px}
+.logo b{font-family:Fraunces,serif;font-weight:800;font-size:1.35rem;color:#fff;line-height:1;display:block;transition:color .3s}
+.logo small{display:block;font-size:.62rem;letter-spacing:.3em;color:#fff;font-weight:600;margin-top:3px;transition:color .3s}
+header.solid .logo b{color:var(--verde)}
+header.solid .logo small{color:var(--muted)}
+.menu{display:flex;gap:26px;align-items:center}
+.menu a{text-decoration:none;font-weight:600;font-size:.95rem;color:#fff;transition:color .2s}
+header.solid .menu a{color:var(--muted)}
+.menu a:hover{color:var(--amarelo)}
+header.solid .menu a:hover{color:var(--verde)}
+.menu .btn{padding:10px 18px;font-size:.9rem;color:#fff !important;background:var(--laranja);box-shadow:none}
+@media (max-width:820px){.menu a:not(.btn){display:none}}
+
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:120px 0 64px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 55%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(40,8,14,.6) 0%,rgba(40,8,14,.25) 35%,rgba(32,6,10,.9) 78%)}
+.hero-inner{max-width:760px;color:#fff}
+.rating{display:inline-flex;align-items:center;gap:10px;background:rgba(255,253,247,.16);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px);padding:8px 14px;border-radius:999px;font-weight:600;font-size:.92rem;margin-bottom:22px}
+.stars{color:var(--amarelo);letter-spacing:2px}
+.hero h1{font-size:clamp(2.8rem,9vw,5.8rem);font-weight:800;color:#fff}
+.hero h1 em{font-style:italic;color:var(--amarelo)}
+.hero p{font-size:clamp(1.05rem,2.4vw,1.25rem);color:#f1ead9;max-width:560px;margin:20px 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.hero .btn-ghost:hover{background:#fff;color:var(--verde)}
+.hero .btn-zap{background:var(--laranja)}
+.hero .btn-zap:hover{background:#ff9d33}
+
+.faixa{background:var(--verde);color:#fff}
+.faixa ul{list-style:none;margin:0;padding:22px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.faixa li{display:flex;align-items:center;gap:12px;font-weight:600;font-size:.98rem}
+.faixa i{font-style:normal;font-size:1.4rem}
+@media (max-width:820px){.faixa ul{grid-template-columns:1fr 1fr}}
+
+section{padding:100px 0}
+@media (max-width:700px){section{padding:70px 0}}
+
+.dest-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.dest-head p{max-width:420px;color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{position:relative;border-radius:var(--r);overflow:hidden;min-height:420px;display:flex;align-items:flex-end;isolation:isolate}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .7s ease}
+.card:hover img{transform:scale(1.05)}
+.card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 35%,rgba(32,6,10,.92))}
+.card div{padding:26px;color:#fff}
+.card h3{font-size:1.9rem;color:#fff}
+.card p{margin:8px 0 0;color:#efe6d3;font-size:.98rem}
+.tag{display:inline-block;background:var(--amarelo);color:#2a1d05;font-weight:700;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:6px;margin-bottom:12px}
+@media (max-width:900px){.cards{grid-template-columns:1fr}.card{min-height:340px}}
+
+.cardapio{background:var(--bg2);border-block:1px solid var(--line)}
+.pratos{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:center;margin-top:40px}
+.pratos img{border-radius:var(--r);box-shadow:0 24px 50px -24px rgba(31,40,20,.5);max-height:640px;width:auto;margin-inline:auto}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.box h3{font-size:1.6rem}
+.box .sub{color:var(--muted);font-size:.95rem;margin:6px 0 16px}
+.box ul{list-style:none;padding:0;margin:0}
+.box li{padding:10px 0;border-bottom:1px dashed var(--line);font-weight:500}
+.box li:last-child{border:0}
+.col{display:flex;flex-direction:column;gap:18px}
+.note{margin-top:8px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:#f8ecd0;border:1px solid #e6cf94;border-radius:var(--r);padding:20px 24px}
+.note p{margin:0;font-weight:600}
+@media (max-width:900px){.pratos{grid-template-columns:1fr}}
+
+.sobre{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.sobre-img{position:relative}
+.sobre-img img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.selo{position:absolute;right:-18px;bottom:28px;background:var(--laranja);color:#fff;border-radius:16px;padding:18px 20px;box-shadow:0 20px 40px -18px rgba(0,0,0,.5)}
+.selo b{display:block;font-family:Fraunces,serif;font-size:2.4rem;line-height:.9;font-weight:800}
+.selo small{font-weight:600;font-size:.82rem}
+.sobre p{color:#4d4132;margin:18px 0 0}
+.sobre .quote{font-family:Fraunces,serif;font-size:1.6rem;font-weight:800;color:var(--laranja);line-height:1.15;margin-top:26px}
+@media (max-width:900px){.sobre{grid-template-columns:1fr;gap:36px}.selo{right:12px}}
+
+.aval{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:stretch}
+.nota{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:34px;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.nota b{font-family:Fraunces,serif;font-size:5.4rem;font-weight:800;line-height:.9;color:var(--laranja)}
+.nota .stars{font-size:1.4rem;margin:8px 0}
+.nota p{margin:0;color:var(--muted)}
+.elogios{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.elogio{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;font-weight:600}
+.elogio small{display:block;color:var(--muted);font-weight:500;margin-top:6px;font-size:.88rem}
+@media (max-width:820px){.aval{grid-template-columns:1fr}.elogios{grid-template-columns:1fr}}
+
+.visita{display:grid;grid-template-columns:1fr 1.1fr;gap:28px}
+.info{display:flex;flex-direction:column;gap:18px}
+.horas{list-style:none;padding:0;margin:0}
+.horas li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.97rem}
+.horas li:last-child{border:0}
+.horas li span:last-child{color:var(--muted);text-align:right}
+.horas li.hoje{color:var(--verde);font-weight:700}
+.horas li.hoje span:last-child{color:var(--verde)}
+.mapa{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:420px}
+.mapa iframe{width:100%;height:100%;min-height:420px;border:0}
+@media (max-width:900px){.visita{grid-template-columns:1fr}}
+
+.final{text-align:center;position:relative;overflow:hidden;isolation:isolate;color:#fff}
+.final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.final::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(60,10,20,.86)}
+.final h2{color:#fff;font-size:clamp(2.4rem,7vw,4.6rem)}
+.final p{color:#efe6d3;margin:18px auto 30px;max-width:520px}
+.final .btn-zap{background:var(--laranja)}
+
+footer{border-top:1px solid var(--line);padding:34px 0 90px;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.zap-float{position:fixed;right:18px;bottom:78px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.5);transition:transform .2s}
+.zap-float:hover{transform:scale(1.07)}
+.zap-float svg{width:32px;height:32px}
+.demo{position:fixed;left:0;right:0;bottom:0;z-index:70;background:repeating-linear-gradient(45deg,#f6b21b 0 18px,#e9a50f 18px 36px);color:#1b1208;text-align:center;font-weight:800;font-size:.9rem;padding:10px 16px;box-shadow:0 -8px 24px rgba(0,0,0,.3)}
+.demo small{display:block;font-weight:600;font-size:.78rem}
+body::after{content:"MODELO";position:fixed;inset:0;display:grid;place-items:center;pointer-events:none;z-index:65;font-family:Fraunces,serif;font-weight:800;font-size:22vw;color:rgba(74,15,26,.05);transform:rotate(-18deg)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+.logo img{width:40px;height:40px}
+.menu .btn{background:var(--laranja);color:#2a1a14 !important}
+.hero .btn-zap,.final .btn-zap{background:var(--laranja);color:#2a1a14}
+.hero .btn-zap:hover,.final .btn-zap:hover{background:var(--amarelo)}
+.tag{background:var(--amarelo)}
+.menu-tabela{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.precos li{display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+.precos li b{color:var(--verde);white-space:nowrap}
+.menu-tabela .box h3{margin-bottom:2px}
+@media (max-width:900px){.menu-tabela{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header id="topo">
+  <div class="wrap nav">
+    <a class="logo" href="#inicio" aria-label="Di Roma Pizzaria">
+      <img src="img/logo.jpg" alt="" width="40" height="40" style="border-radius:10px">
+      <span><b>Di Roma</b><small>PIZZARIA</small></span>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">A massa</a>
+      <a href="#visita">Como chegar</a>
+      <a class="btn btn-zap" href="https://wa.me/5567992585898?text=Oi!%20Vi%20o%20site%20e%20quero%20fazer%20um%20pedido" target="_blank" rel="noopener">Pedir agora</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-bg"><img src="img/margherita.jpg" alt="Pizza com tomate, queijo derretido e manjericão" style="object-position:center 45%"></div>
+  <div class="wrap hero-inner">
+    <div class="rating"><span class="stars" aria-hidden="true">★★★★</span> 4,3 no Google · 266 avaliações</div>
+    <h1>Massa fresca,<br><em>feita todo dia.</em></h1>
+    <p>Sem pré-assamento e sem conservantes. Molho artesanal, recheio generoso e aquela pizza no ponto que você gosta. Também tem açaí.</p>
+    <div class="cta">
+      <a class="btn btn-zap" href="https://wa.me/5567992585898?text=Oi!%20Vi%20o%20site%20e%20quero%20fazer%20um%20pedido" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+        Pedir pelo WhatsApp</a>
+      <a class="btn btn-ghost" href="https://instadelivery.com.br/diromapizzaria2" target="_blank" rel="noopener">Pedir online</a>
+    </div>
+  </div>
+</section>
+
+<div class="faixa">
+  <ul class="wrap">
+    <li><i aria-hidden="true">🍕</i> Massa fresca diária</li>
+    <li><i aria-hidden="true">🔥</i> Do jeito que você gosta</li>
+    <li><i aria-hidden="true">🍇</i> Açaí</li>
+    <li><i aria-hidden="true">🛵</i> Delivery</li>
+  </ul>
+</div>
+
+<section id="destaques">
+  <div class="wrap">
+    <div class="dest-head reveal">
+      <div><div class="kicker">Mais pedidos</div><h2>Pizza, combo<br>e muito mais</h2></div>
+      <p>Pizza grande, média ou brotinho, com até 3 sabores na grande. E os combos com refrigerante que fazem a noite.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal"><img src="img/pepperoni.jpg" alt="Fatia de pizza de calabresa sendo levantada" loading="lazy"><div><span class="tag">Combo</span><h3>Pizza grande + Guaraná 1 L</h3><p>Frango com catupiry ou portuguesa. R$ 59,90.</p></div></article>
+      <article class="card reveal"><img src="img/calabresa.jpg" alt="Pizza de calabresa com cebola e azeitona" loading="lazy"><div><span class="tag">Combo</span><h3>Duas pizzas + refri de 2 L</h3><p>Escolha dois sabores e leve o refrigerante. A partir de R$ 119,90.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="cardapio" id="cardapio">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">Cardápio</div><h2>Escolha do seu jeito</h2></div>
+    <div class="menu-tabela">
+      <div class="box reveal">
+        <h3>Pizzas</h3>
+        <p class="sub">Preços a partir de</p>
+        <ul class="precos">
+          <li><span>Grande · 8 pedaços · até 3 sabores</span><b>R$ 56,00</b></li>
+          <li><span>Média · 6 pedaços · até 2 sabores</span><b>R$ 44,00</b></li>
+          <li><span>Brotinho · 4 pedaços · até 2 sabores</span><b>R$ 39,00</b></li>
+        </ul>
+        <p class="sub" style="margin-top:12px">Prefere mais assadinha? É só avisar no pedido.</p>
+      </div>
+      <div class="box reveal">
+        <h3>Açaí</h3>
+        <p class="sub">Frutas e acompanhamentos à escolha</p>
+        <ul class="precos">
+          <li><span>Copo 330 ml</span><b>R$ 18,00</b></li>
+          <li><span>Copo 400 ml</span><b>R$ 20,00</b></li>
+          <li><span>Copo 500 ml</span><b>R$ 27,00</b></li>
+          <li><span>Copo 700 ml</span><b>R$ 38,50</b></li>
+          <li><span>Marmita 1 litro</span><b>R$ 55,00</b></li>
+        </ul>
+      </div>
+      <div class="box reveal">
+        <h3>Combos</h3>
+        <p class="sub">Duas pizzas + refrigerante</p>
+        <ul class="precos">
+          <li><span>Calabresa + presunto + Funada 2 L</span><b>R$ 119,90</b></li>
+          <li><span>Frango c/ catupiry + calabresa + Funada 2 L</span><b>R$ 119,90</b></li>
+          <li><span>Frango c/ catupiry + lombo c/ catupiry + Coca 2 L</span><b>R$ 119,90</b></li>
+          <li><span>Lombo c/ catupiry + baiana + Coca 2 L</span><b>R$ 124,90</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="note reveal">
+      <p>Quer ver todos os sabores e fazer o pedido? Chama no WhatsApp ou peça online.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn btn-zap" href="https://wa.me/5567992585898?text=Oi!%20Quero%20ver%20os%20sabores" target="_blank" rel="noopener">Ver sabores no WhatsApp</a>
+        <a class="btn btn-ghost" href="https://instadelivery.com.br/diromapizzaria2" target="_blank" rel="noopener">Pedir online</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap sobre">
+    <div class="sobre-img reveal">
+      <img src="img/margherita.jpg" alt="Pizza de muçarela com tomate e manjericão" loading="lazy" style="aspect-ratio:4/5;object-position:35% 50%">
+      <div class="selo"><b>4,3 ★</b><small>266 avaliações no Google</small></div>
+    </div>
+    <div class="reveal">
+      <div class="kicker">Sobre a nossa massa</div>
+      <h2>Verdadeiro sabor de casa</h2>
+      <p>A massa é fresca, preparada todo dia, sem pré-assamento e sem conservantes. A gente assa no ponto ideal: macia, suculenta e equilibrada, combinando com o molho artesanal e os recheios.</p>
+      <p>Prefere sua pizza mais assadinha? É só avisar no pedido que ela sai do seu jeito.</p>
+      <p class="quote">Tradição, amor e história<br>em cada pizza.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cardapio" id="avaliacoes">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:40px"><div class="kicker">Quem pede, repete</div><h2>O que falam da gente</h2></div>
+    <div class="aval">
+      <div class="nota reveal"><b>4,3</b><div class="stars" aria-hidden="true">★★★★</div><p>266 avaliações no Google</p></div>
+      <div class="elogios">
+        <div class="elogio reveal">🍕 Pizzas saborosas e bem recheadas<small>Comentário frequente dos clientes</small></div>
+        <div class="elogio reveal">🛵 Entrega rápida<small>Também aparece nas avaliações</small></div>
+        <div class="elogio reveal">💰 Preço razoável<small>Combos com refrigerante</small></div>
+        <div class="elogio reveal">🙌 Equipe atenciosa<small>Pedido pelo WhatsApp ou online</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visita">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:40px"><div class="kicker">Como chegar</div><h2>Vem pra Di Roma</h2></div>
+    <div class="visita">
+      <div class="info reveal">
+        <div class="box">
+          <h3>Endereço</h3>
+          <p class="sub" style="margin-bottom:14px">R. Anchieta, 404 · Vila Piratininga · Campo Grande - MS · CEP 79081-180</p>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Pizzaria+Di+Roma+R.+Anchieta+404+Campo+Grande" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+        <div class="box">
+          <h3 style="margin-bottom:10px">Horário</h3>
+          <ul class="horas">
+            <li class="hoje"><span>Funcionamento</span><span>18h às 23h30</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mapa reveal">
+        <iframe title="Mapa da Di Roma Pizzaria" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Pizzaria%20Di%20Roma%2C%20R.%20Anchieta%2C%20404%2C%20Campo%20Grande%20MS&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <img src="img/banner.jpg" alt="" aria-hidden="true">
+  <div class="wrap reveal">
+    <h2>Hoje tem pizza?</h2>
+    <p>Pede pelo WhatsApp ou online e recebe quentinha em casa.</p>
+    <a class="btn btn-zap" href="https://wa.me/5567992585898?text=Oi!%20Vi%20o%20site%20e%20quero%20fazer%20um%20pedido" target="_blank" rel="noopener">Pedir pelo WhatsApp · (67) 99258-5898</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Di Roma Pizzaria · Campo Grande - MS</span>
+    <span>Modelo de site feito por Luiz Renato</span>
+  </div>
+</footer>
+
+<div class="demo">MODELO DE DEMONSTRAÇÃO · não é o site oficial<small>Criado por Luiz Renato para apresentação</small></div>
+
+<a class="zap-float" href="https://wa.me/5567992585898?text=Oi!%20Vi%20o%20site%20e%20quero%20fazer%20um%20pedido" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+</a>
+
+<script>
+const h=document.getElementById('topo');
+const onScroll=()=>h.classList.toggle('solid',scrollY>40);
+onScroll();addEventListener('scroll',onScroll,{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
